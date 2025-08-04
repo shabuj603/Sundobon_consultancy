@@ -9,8 +9,8 @@ import { Menu, X } from 'lucide-react';
             const [megaOpen, setMegaOpen] = useState(false);
         return (
             <>
-        
-            <nav className="bg-white shadow-lg">
+            <div className='w-full bg-yellow-600'> top nav bar </div>
+            <nav className="bg-white shadow-lg shadow-2xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex items-center">
