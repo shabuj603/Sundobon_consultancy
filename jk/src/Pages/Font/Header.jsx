@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Menu, X } from 'lucide-react';
 
 
@@ -10,25 +12,24 @@ import { Menu, X } from 'lucide-react';
         return (
             <>
             <div className='w-full bg-yellow-600'> 
-                <div className='grid grid-cols-4 p-4 text-white'>
-                    <div className=' '>Are you ready to grow up your business? Contact Us</div>
-                    <div className=' '>jkconsultancy@gmail.com</div>
-                    <div className=' '>(+88) 0139774753</div>
+                <div className='grid grid-cols-3 py-2 text-white'>
+                    <div className='px-5 text-center'>Are you ready to grow up your business? Contact Us</div>
+                    <div className=' px-5 text-center '><i className="fa-solid fa-envelope pr-3 "></i>info.jkconsultancy603@gmail.com</div>
+                    <div className=' px-5 text-center'><i class="fa-solid fa-phone pr-3 text-lg"></i>(+88 ) 0139774753</div>
                   
-
                     </div>    
              </div>
-            <nav className="bg-white border-b border-gray shadow-lg shadow-2xl">
+            <nav className="bg-white border-b border-gray shadow-lg shadow-2xl top-0 sticky">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex items-center">
-                            <a href=""><span className="text-xl font-bold text-blue-600"><span className='text-yellow-600 text-2x1 '> JK</span > <span className='text-blue-600'>Consultancy</span></span></a>
+                            <Link to="/"><span className="text-xl font-bold text-blue-600"><span className='text-yellow-600 text-2x1 '> JK</span > <span className='text-blue-600'>Consultancy</span></span></Link>
                         </div>
 
                         {/* Desktop Menu */}
                         <div className="hidden md:flex items-center space-x-6">
-                            <a href="#" className="hover:text-blue-500">Home</a>
-                            <a href="#" className="hover:text-blue-500">About</a>
+                            <Link to="/" className="hover:text-blue-500">Home</Link>
+                            <Link to="/about" className="hover:text-blue-500">About</Link>
 
                             <div
                                 className="relative"
@@ -95,9 +96,14 @@ import { Menu, X } from 'lucide-react';
                                 )}
                             </div>
 
-                            <a href="#" className="hover:text-blue-500">Contact</a>
-                            <button className='bg-yellow-400 p-3 rounded-sm'><a href="" className="hover:text-white">Login</a></button>
-                             <button className='' ><a href="" className="hover:text-white hover:bg-blue-600 p-3 rounded-sm">Sign Up</a></button>
+                            <Link to="/contract" className="hover:text-blue-500">Contact</Link>
+                            <Link to="/contract" className="hover:text-blue-500"></Link>
+                            <button className='bg-blue-800 p-3 rounded-sm text-white'><Link to="/login" className="hover:text-white">Career</Link></button>
+
+
+                            <button className='bg-yellow-400 p-3 rounded-sm'><Link to="/login" className="hover:text-white">Login</Link></button>
+                             <button className='' ><Link to="/signup" className="hover:text-white hover:bg-blue-600 p-3 rounded-sm">Sign Up</Link></button>
+                             <input type="search" placeholder='search' className='rounded-lg'/>
 
                         </div>
 
@@ -134,4 +140,4 @@ import { Menu, X } from 'lucide-react';
         );
     };
 
-export default Header
+export default Header;
