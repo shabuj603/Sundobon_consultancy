@@ -9,8 +9,16 @@ import { Menu, X } from 'lucide-react';
             const [megaOpen, setMegaOpen] = useState(false);
         return (
             <>
-        
-            <nav className="bg-white shadow-lg">
+            <div className='w-full bg-yellow-600'> 
+                <div className='grid grid-cols-4 p-4 text-white'>
+                    <div className=' '>Are you ready to grow up your business? Contact Us</div>
+                    <div className=' '>jkconsultancy@gmail.com</div>
+                    <div className=' '>(+88) 0139774753</div>
+                  
+
+                    </div>    
+             </div>
+            <nav className="bg-white border-b border-gray shadow-lg shadow-2xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex items-center">
