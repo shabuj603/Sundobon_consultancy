@@ -23,7 +23,7 @@ import { Menu, X } from 'lucide-react';
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex items-center">
-                            <Link to="/"><span className="text-xl font-bold text-blue-600"><span className='text-yellow-600 text-2x1 '> JK</span > <span className='text-blue-600'>Consultancy</span></span></Link>
+                            <Link to="/"><span className="text-xl font-bold text-blue-600"><span className='text-yellow-600 text-2x1 '> Sundarbon</span > <span className='text-blue-600'>C.</span></span></Link>
                         </div>
 
                         {/* Desktop Menu */}
