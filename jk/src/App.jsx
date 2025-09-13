@@ -8,26 +8,15 @@ import Home from './Pages/Font/Home'
 import ReactDOM from "react-dom/client";
 import LoginPage from './Pages/Font/Login'
 import SignUpPage from './Pages/Font/Registration';
+import MainNuv from './Pages/Font/Mainnav';
 
 
 function App() {
  
 
   return (
-    <>
-     <Header/>
-     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}>  </Route>
-        <Route path="/login" element={<LoginPage />}></Route>
-        <Route path="/signup" element={<SignUpPage />}></Route>
-
-
-      
-       
-      
-      </Routes>
-    </BrowserRouter>
+    <>  
+    <MainNuv/>
     </>
   )
 }
