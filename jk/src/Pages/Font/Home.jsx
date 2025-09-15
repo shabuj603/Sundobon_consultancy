@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Carosol from '../Home/Carosol';
+import Card from './Card';
+
 function Home() {
 
   return (
@@ -60,7 +62,32 @@ function Home() {
         </div>
       </div>
 
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore voluptate, voluptates voluptatibus officiis totam, quisquam ullam animi impedit reprehenderit iure nobis quae, laudantium distinctio quaerat harum iste deserunt ipsa molestiae sequi itaque eum cupiditate maiores repellat. Vero, laboriosam iure corporis repudiandae obcaecati aut consequatur ullam quam necessitatibus numquam nostrum fugit nam perspiciatis maxime a, id, voluptas eligendi delectus. Eos deleniti cumque alias similique quasi inventore voluptates, consequuntur maiores. Nisi ipsam corrupti sit voluptates impedit sed, nesciunt assumenda perspiciatis, ab sequi quam debitis ipsum cupiditate repudiandae ipsa doloribus? Ullam corporis esse illum delectus aliquid. Obcaecati culpa rerum est voluptatem, esse nulla in repudiandae nobis nam impedit eos natus necessitatibus aliquam blanditiis sed cumque cum deleniti corporis nesciunt similique excepturi deserunt? Voluptatibus veniam necessitatibus blanditiis voluptate eos quis quos pariatur repellendus excepturi aspernatur, tenetur neque perspiciatis possimus assumenda id minima iste repudiandae facilis hic eveniet minus quam laboriosam vel doloremque. Iure explicabo incidunt tempore ut quidem quaerat architecto tenetur laborum voluptates accusantium id voluptas expedita optio harum ad asperiores rem alias neque ex facilis similique autem exercitationem, quasi commodi. Sint id non dolore voluptatem nemo quia deserunt excepturi iste quae ducimus autem aliquid, tempore unde nisi quos. Laboriosam, praesentium! Molestias, fuga rem.
+      <div className='container'>
+        <h6>What we do</h6>
+  <div className="min-h-screen flex overflow-hidden items-center justify-center bg-gray-100 p-6 gap-4 flex-1">
+    
+        <Card
+          image="https://source.unsplash.com/random/400x300/?nature"
+          title="Beautiful Nature"
+          description="ext of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimeExplore the beauty of untouched forests and mountains."
+          buttonText="Read More"
+        />
+        <Card
+          image="https://source.unsplash.com/random/400x300/?nature"
+          title="Beautiful Nature"
+          description="Explore the beauty of untouched forests and mountains."
+          buttonText="Read More"
+        />
+        <Card
+          image="https://source.unsplash.com/random/400x300/?nature"
+          title="Beautiful Nature"
+          description="Explore the beauty of untouched forests and mountains. lo"
+          
+          buttonText="Read More"
+        />
+      </div>
+      
+      </div>
     </div>
   )
 }
