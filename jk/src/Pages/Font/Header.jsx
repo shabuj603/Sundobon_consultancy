@@ -15,7 +15,7 @@ import { Menu, X } from 'lucide-react';
                 <div className='grid grid-cols-3 py-2 text-white'>
                     <div className='px-5 text-center'>Are you ready to grow up your business? Contact Us</div>
                     <div className=' px-5 text-center '><i className="fa-solid fa-envelope pr-3 "></i>info.jkconsultancy603@gmail.com</div>
-                    <div className=' px-5 text-center'><i class="fa-solid fa-phone pr-3 text-lg"></i>(+88 ) 0139774753</div>
+                    <div className=' px-5 text-center'><i className="fa-solid fa-phone pr-3 text-lg"></i>(+88 ) 0139774753</div>
                   
                     </div>    
              </div>
