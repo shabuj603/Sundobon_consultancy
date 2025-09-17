@@ -23,5 +23,11 @@
         "title":"10",
         "description": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "button":"Read More"
+    },
+    {
+        "image":".././images/Flux_Dev_Design1.jpg",
+        "title":"10",
+        "description": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "button":"Read More"
     }
 ]
