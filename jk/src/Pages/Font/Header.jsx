@@ -11,7 +11,7 @@ import { Menu, X } from 'lucide-react';
             const [megaOpen, setMegaOpen] = useState(false);
         return (
             <>
-            <div className='w-full bg-yellow-600'> 
+            <div className='w-full bg-yellow-600 z-index-50'> 
                 <div className='grid grid-cols-3 py-2 text-white'>
                     <div className='px-5 text-center'>Are you ready to grow up your business? Contact Us</div>
                     <div className=' px-5 text-center '><i className="fa-solid fa-envelope pr-3 "></i>info.jkconsultancy603@gmail.com</div>
@@ -36,9 +36,9 @@ import { Menu, X } from 'lucide-react';
                                 onMouseEnter={() => setMegaOpen(true)}
                                 onMouseLeave={() => setMegaOpen(false)}
                             >
-                                <button className="hover:text-blue-500">Services</button>
+                                <button className="hover:text-blue-500 relative">Services</button>
                                 {megaOpen && (
-                                    <div className="absolute right-0 top-full bg-white p-6 shadow-xl w-[800px] grid grid-cols-3 gap-4 z-50">
+                                    <div className="absolute left-20 right-10 top-full bg-white p-6 shadow-xl w-[800px] grid grid-cols-3 gap-4 z-50">
                                         <div>
                                             <h4 className="font-bold mb-2">ENTITY FORMATION</h4>
                                             <ul>
