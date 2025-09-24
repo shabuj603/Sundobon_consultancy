@@ -1,0 +1,9 @@
+import React from 'react'
+
+function Service() {
+  return (
+    <div>Service page here Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum blanditiis laboriosam dolore libero quo temporibus dolor? Nisi possimus id, minima consectetur perspiciatis facilis vitae aut nobis eaque nam quod quibusdam, laborum deserunt quia dolore illum mollitia, voluptatum qui minus aperiam ea eos cum error soluta. A, in! Eum voluptatum sint quaerat vel. Minus eveniet quas quidem veritatis qui necessitatibus inventore non pariatur sequi illum nisi quos, ipsum, consequuntur aliquam corrupti? Consequuntur itaque unde aut reprehenderit nostrum dolores ullam obcaecati repellat exercitationem, impedit doloremque ratione ipsam hic praesentium quo dolorum adipisci? Corporis optio veritatis perferendis animi sit quis! Ratione voluptatum delectus enim natus repudiandae id atque similique, aperiam molestiae distinctio recusandae magnam obcaecati dignissimos quisquam eveniet optio accusamus saepe suscipit commodi rerum placeat. At iste a placeat amet deleniti, cupiditate veritatis laborum, consectetur ea quam tempora facilis. Hic dolore, eos perspiciatis nostrum voluptatem fugiat delectus quos perferendis dolores sequi molestiae recusandae fugit id? Blanditiis minima fugiat beatae, unde laboriosam provident quam minus cum eaque officia nihil magni vero suscipit repellendus quo reprehenderit autem quos quisquam officiis, totam dicta! Laudantium ipsam repudiandae laborum iusto tenetur temporibus accusamus fuga consectetur, quo molestias repellendus nihil corporis consequuntur culpa molestiae cumque eaque ducimus deserunt.</div>
+  )
+}
+
+export default Service
