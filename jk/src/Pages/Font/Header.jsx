@@ -30,6 +30,7 @@ import { Menu, X } from 'lucide-react';
                         <div className="hidden md:flex items-center space-x-6">
                             <Link to="/" className="hover:text-blue-500">Home</Link>
                             <Link to="/about" className="hover:text-blue-500">About</Link>
+                           
 
                             <div
                                 className="relative"
@@ -101,6 +102,8 @@ import { Menu, X } from 'lucide-react';
 
                             <Link to="/contract" className="hover:text-blue-500">Contact</Link>
                             <Link to="/contract" className="hover:text-blue-500"></Link>
+                             <Link to="/games" className="bg-red-800 p-3 rounded-sm text-white hover:text-white">Games</Link>
+
                             <button className='bg-blue-800 p-3 rounded-sm text-white'><Link to="/login" className="hover:text-white">Career</Link></button>
 
 

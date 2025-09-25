@@ -21,7 +21,7 @@ const Carosol = () => {
 
     return (
         <div>
-            <div className='bg-white'><div class="grid grid-cols-2 gap-4 pt-10">
+            <div className='bg-white'><div className="grid grid-cols-2 gap-4 pt-10">
                 <div className='grid grid-2 gap-4'>
                     <div className='pl-5' >
                         <img className='text-lg font-bold mask-x-from-70%' src="https://www.expatcpa.com/wp-content/uploads/2018/12/icon-1-124x160.png" alt="" />

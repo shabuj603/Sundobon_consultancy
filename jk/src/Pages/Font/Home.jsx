@@ -10,8 +10,15 @@ import CardData from './Card/Card.json';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Home() {
+const truncateString =(str, num)=>{
+    if(str.length > num){
+      return str.slice(0, num)+ "...."
+    }else{
+      return(str);
+    }
+  }
   let items = [];
-  items = CardData.map((item, index) => <Card key={index} image={item.image} title={item.title} description={item.description} buttonText={item.button}
+  items = CardData.map((item, index) => <Card key={index} image={item.image} title={item.title} description={truncateString(item.description, 100)} buttonText={item.button}
   />)
 
   const navigate = useNavigate();
@@ -27,8 +34,8 @@ function Home() {
             <button onClick={()=>{navigate('/service')}}  className='bg-blue-600 text-white font-bold p-3 outline-solid rounded-full mr-4 hover:bg-blue-800 cursor-pointer'>Find Out More <i className="fa-solid fa-right-long text-center"></i></button>           
             <button className='bg-blue-600 text-white font-bold p-3 outline-solid rounded-full hover:bg-blue-800 cursor-pointer'>Book Meeting </button>
           </div>
-          <div className=''>
-            <video className="h-full w-full rounded-lg overflow-hidden" controls>
+          <div className='-z-10'>
+            <video className="h-full w-full rounded-lg " controls>
               <source
                 src="https://docs.material-tailwind.com/demo.mp4"
                 type="video/mp4"
@@ -37,9 +44,9 @@ function Home() {
             </video></div>
 
         </div>
-        <div className='grid grid-cols-4 gap-4 justify-center overflow-hidden'>
-          <div className="relative flex flex-col bg-violet-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2 hover:scale-110 translate-y-1 delay-150 duration-300 ease-in-out transform-gpu">
-            <div className="">
+        <div className='grid grid-cols-4 gap-4 justify-center -z-10'>
+          <div className="relative flex flex-col bg-violet-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2 cursor-pointer hover:scale-110 translate-y-1 delay-150 duration-300 ease-in-out transform-gpu ">
+            <div className=" -z-30">
               <h6 className="mb-2 text-slate-800 text-xl font-semibold">
                 TAX
               </h6>
@@ -83,7 +90,7 @@ function Home() {
           {items}
         </div>
         <div className='flex items-center justify-center mb-3'>
-          <a href="http://"> <button className=' flex items-center justify-center bg-blue-600 text-white font-bold p-3 outline-solid rounded-md hover:bg-orange-400 '>View All Service </button></a>
+           <button className=' flex items-center justify-center bg-blue-600 text-white font-bold p-3 outline-solid rounded-md cursor-pointer  hover:bg-blue-700 o' onClick={()=>{navigate('/service')}}>View All Service </button>
         </div>
       </div>
       <div className="container mx-auto px-4 mt-10">
@@ -102,7 +109,7 @@ function Home() {
              <div className='flex'>
           <a href="http://"> <button className=' flex  bg-blue-600 text-white font-bold p-3 outline-solid rounded-md hover:bg-orange-400 '>Talk To Expert </button></a>
         </div>
-        <img src=" " alt="" srcset="" />
+        <img src=" " alt="" srcSet="" />
 
           </div>
         </div>
