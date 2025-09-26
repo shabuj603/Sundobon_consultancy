@@ -39,11 +39,10 @@ function Mainnav() {
           <Route path='/service/:title' element={<Serviced/>}></Route>
           <Route path='/games' element={<Protected isLoggedin={isLoggedin}> <Games/> </Protected> }></Route>
         
-
           <Route path='/service/plcompany' element={<Plcompanyreg/>}></Route>
           <Route path='/sercive/publiclcompany' element={<Pulcompany/>}></Route>
           <Route path='/sercive/jointVenture' element={<Pulcompany/>}></Route>
-
+          
           <Route path='*' element={<Error/>}></Route>
 
 

@@ -1,7 +1,6 @@
 import React from 'react'
-
+import {Helmet} from "react-helmet";
 import Carosol from '../Home/Carosol';
-
 
 
 
@@ -25,6 +24,10 @@ const truncateString =(str, num)=>{
 
   return (
     <div>
+      
+    <Helmet>
+      <title>Home page</title>
+    </Helmet>
       <div className='bg-[url(./images/backend1.png)] bg-cover bg-center h-screen'>
         {/* <Carosol/> */}
         <div className='grid grid-cols-2 gap-4 text-center pt-15 pb-2 px-10 ' >
@@ -44,16 +47,16 @@ const truncateString =(str, num)=>{
             </video></div>
 
         </div>
-        <div className='grid grid-cols-4 gap-4 justify-center -z-10'>
-          <div className="relative flex flex-col bg-violet-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2 cursor-pointer hover:scale-110 translate-y-1 delay-150 duration-300 ease-in-out transform-gpu ">
-            <div className=" -z-30">
+        <div className='grid grid-cols-4 gap-4 justify-center'>         
+          <div className="absulate flex flex-col bg-violet-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
+            <div className="">
               <h6 className="mb-2 text-slate-800 text-xl font-semibold">
                 TAX
               </h6>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quos?</p>
             </div>
           </div>
-          <div className="relative flex flex-col bg-teal-50 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
+          <div className="absulate flex flex-col bg-teal-50 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
             <div className="">
               <h6 className="mb-2 text-slate-800 text-xl font-semibold">
                 VAT
@@ -61,7 +64,7 @@ const truncateString =(str, num)=>{
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quos?</p>
             </div>
           </div>
-          <div className="relative flex flex-col bg-purple-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
+          <div className="absulate flex flex-col bg-purple-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
             <div className="">
               <h6 className="mb-2 text-slate-800 text-xl font-semibold">
                 RJSC
@@ -69,7 +72,7 @@ const truncateString =(str, num)=>{
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quos?</p>
             </div>
           </div>
-          <div className="relative flex flex-col bg-blue-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
+          <div className="absulate flex flex-col bg-blue-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
             <div className="">
               <h6 className="mb-2 text-slate-800 text-xl font-semibold">
                 BIDA

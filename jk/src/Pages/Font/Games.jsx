@@ -1,8 +1,11 @@
 import React from 'react'
+import Gamepage from './Games/Gamepage'
 
 function Games() {
   return (
-    <div>Games</div>
+    <div>
+      <h1><Gamepage/></h1>
+    </div>
   )
 }
 
