@@ -100,7 +100,7 @@ import { Menu, X } from 'lucide-react';
                                 )}
                             </div>
 
-                            <Link to="/contract" className="hover:text-blue-500">Contact</Link>
+                            <Link to="/contactus" className="hover:text-blue-500">Contact</Link>
                             <Link to="/contract" className="hover:text-blue-500"></Link>
                              <Link to="/games" className="bg-red-800 p-3 rounded-sm text-white hover:text-white">Games</Link>
 

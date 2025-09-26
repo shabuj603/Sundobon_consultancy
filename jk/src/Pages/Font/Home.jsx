@@ -97,7 +97,7 @@ const truncateString =(str, num)=>{
         </div>
       </div>
       <div className="container mx-auto px-4 mt-10">
-        <div class="grid grid-cols-2 gap-4 my-30">
+        <div className="grid grid-cols-2 gap-4 my-30">
           <div>
             <p className='text-blue-600 text-3xl'>World-class VAT Experts</p>
 

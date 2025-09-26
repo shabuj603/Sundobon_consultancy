@@ -13,6 +13,8 @@ import Error from './Error';
 import Games from './Games';
 import Protected from './../Protected';
 import Footer from './Footer';
+import ContactUs from './ContactUs';
+
 
 
 
@@ -36,6 +38,8 @@ function Mainnav() {
           <Route path='/login' element={<LoginPage/>}></Route>
           <Route path='/signup' element={<SignUpPage/>}></Route>
           <Route path='/service' element={<Service/>}></Route>
+          <Route path='/contactus' element={<ContactUs/>}></Route>
+
           <Route path='/service/:title' element={<Serviced/>}></Route>
           <Route path='/games' element={<Protected isLoggedin={isLoggedin}> <Games/> </Protected> }></Route>
         
