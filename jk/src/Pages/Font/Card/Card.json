@@ -2,31 +2,31 @@
 [
     {
         "image":".././images/Flux_Dev_Design1 (1).jpg",
-        "title":"14",
-        "description": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "title":"VAT",
+        "description": "simply s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem dummy text of the printing and typesetting industry. lorem200 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "button":"Read More"
     },
      {
         "image":".././images/Flux_Dev_Design1 (2).jpg",
-        "title":"13",
+        "title":"Tax",
         "description": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "button":"Read More"
     },
      {
-         "image":".././images/Flux_Dev_Design1.jpg",
-        "title":"111",
+        "image":".././images/Flux_Dev_Design1.jpg",
+        "title":"Rjsc",
         "description": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "button":"Read More"
     },
     {
         "image":".././images/Flux_Dev_Design1.jpg",
-        "title":"10",
+        "title":"BIDA",
         "description": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "button":"Read More"
     },
     {
         "image":".././images/Flux_Dev_Design1.jpg",
-        "title":"10",
+        "title":"Trade License",
         "description": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "button":"Read More"
     }

@@ -30,6 +30,7 @@ import { Menu, X } from 'lucide-react';
                         <div className="hidden md:flex items-center space-x-6">
                             <Link to="/" className="hover:text-blue-500">Home</Link>
                             <Link to="/about" className="hover:text-blue-500">About</Link>
+                           
 
                             <div
                                 className="relative"
@@ -38,16 +39,18 @@ import { Menu, X } from 'lucide-react';
                             >
                                 <button className="hover:text-blue-500 relative">Services</button>
                                 {megaOpen && (
-                                    <div className="absolute left-20 right-10 top-full bg-white p-6 shadow-xl w-[800px] grid grid-cols-3 gap-4 z-50">
+                                    <div className=''>
+                                        <div className="absolute -left-100 top-full bg-white p-6 shadow-xl w-[1000px] grid grid-cols-3 gap-4 z-50">
                                         <div>
                                             <h4 className="font-bold mb-2">ENTITY FORMATION</h4>
                                             <ul>
-                                                <li><a href="#" className="text-sm hover:text-blue-500">PRIVATE LIMITED COMPANY</a></li>
-                                                <li><a href="#" className="text-sm hover:text-blue-500">PUBLIC LIMITED COMPANY</a></li>
-                                                <li><a href="#" className="text-sm hover:text-blue-500">JOINT VENTURE INCORPORATION</a></li>
-                                                <li><a href="#" className="text-sm hover:text-blue-500">LIAISON OFFICE </a></li>
-                                                <li><a href="#" className="text-sm hover:text-blue-500">BRANCH OFFICE</a></li>
-                                                <li><a href="#" className="text-sm hover:text-blue-500">PUBLIC LIMITED COMPANY</a></li>
+                                                <li><Link to ="/service" className="text-sm hover:text-blue-500 hidden">All Service</Link></li>
+                                                <li><Link to ="/service/plcompany" className="text-sm hover:text-blue-500">PRIVATE LIMITED COMPANY</Link></li>                            
+                                                <li><Link to="/sercive/publiclcompany" className="text-sm hover:text-blue-500">PUBLIC LIMITED COMPANY</Link></li>
+                                                <li><Link to="/sercive/jointVenture" className="text-sm hover:text-blue-500">JOINT VENTURE INCORPORATION</Link></li>
+                                                <li><Link to="#" className="text-sm hover:text-blue-500">LIAISON OFFICE </Link></li>
+                                                <li><Link to="#" className="text-sm hover:text-blue-500">BRANCH OFFICE</Link></li>
+                                                <li><Link to="#" className="text-sm hover:text-blue-500">PUBLIC LIMITED COMPANY</Link></li>
                                             </ul>
                                         </div>
                                            <div>
@@ -93,11 +96,14 @@ import { Menu, X } from 'lucide-react';
                                             </ul>
                                         </div>
                                     </div>
+                                    </div>
                                 )}
                             </div>
 
                             <Link to="/contract" className="hover:text-blue-500">Contact</Link>
                             <Link to="/contract" className="hover:text-blue-500"></Link>
+                             <Link to="/games" className="bg-red-800 p-3 rounded-sm text-white hover:text-white">Games</Link>
+
                             <button className='bg-blue-800 p-3 rounded-sm text-white'><Link to="/login" className="hover:text-white">Career</Link></button>
 
 
