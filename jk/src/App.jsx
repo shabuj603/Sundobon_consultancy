@@ -15,8 +15,8 @@ function App() {
  
 
   return (
-    <>  
-    <MainNuv/>
+    <> 
+      <MainNuv/>   
     </>
   )
 }
