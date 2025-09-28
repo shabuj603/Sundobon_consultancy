@@ -1,6 +1,10 @@
 import React, { useCallback, useState } from 'react'
 import { useMemo } from "react";
 import Todo from './Todo';
+import Eventhandler from '../../../EVENT_HANDLER_CLASS/Index';
+import Eventbinding from './../../../EVENT_BINDING/Index';
+import Alltodos from './../../../TODOS/Index';
+
 
 const Gamepage = () => {
     const [count, setCount] =useState(0);
@@ -17,10 +21,13 @@ const Gamepage = () => {
     const handleMessage = useCallback(()=>{
         setCount((count)=> count + 1);
     },[count])
-     console.log("game 2");
+   
      
   return (   
       <div>
+        <Alltodos/>
+        <Eventhandler/>
+        <Eventbinding/>
         {toggle ? 'on':'off'}
         <button className='bg-red-400 p-6' onClick={()=>{setToggle(!toggle)}}>Toggle</button>
 {new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(today)}
@@ -38,7 +45,6 @@ const Gamepage = () => {
   )
 }
 const expensiveCalculation  = (num)=>{
-    console.log("expensiveCalculation ");
     for (let i = 0; i < 10000000; i++) {   
         num += 1;
     }

@@ -1,10 +1,14 @@
 import React from 'react'
 import Gamepage from './Games/Gamepage'
+import Dashboard from './Games/Dashboard'
 
 function Games() {
   return (
     <div>
-      <h1><Gamepage/></h1>
+      <article>
+      <Dashboard/>
+      </article>
+      
     </div>
   )
 }

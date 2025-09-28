@@ -3,15 +3,26 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Menu, X } from 'lucide-react';
-
-
+import { useTheme } from 'next-themes'
 
     const Header = () => {
             const [isOpen, setIsOpen] = useState(false);
             const [megaOpen, setMegaOpen] = useState(false);
+            const [action, setAction] = useState("sign up");
+            const [isLongin, setIsLogin] = useState(true);
+            const[dayligh, setDayligh]= useState(true);
+            const { theme, setTheme } = useTheme();
+
+            const handleDarkmood = ()=>{
+                setDayligh(!dayligh);
+                setTheme(theme === "light"? "dark": "light");
+            }
+           
         return (
             <>
+            
             <div className='w-full bg-yellow-600 z-index-50'> 
+             
                 <div className='grid grid-cols-3 py-2 text-white'>
                     <div className='px-5 text-center'>Are you ready to grow up your business? Contact Us</div>
                     <div className=' px-5 text-center '><i className="fa-solid fa-envelope pr-3 "></i>info.jkconsultancy603@gmail.com</div>
@@ -19,7 +30,7 @@ import { Menu, X } from 'lucide-react';
                   
                     </div>    
              </div>
-            <nav className="bg-white border-b border-gray shadow-lg shadow-2xl top-0 sticky">
+            <nav className="bg-white text-black border-b border-gray shadow-lg top-0 sticky dark:bg-zinc-500">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex items-center">
@@ -106,10 +117,11 @@ import { Menu, X } from 'lucide-react';
 
                             <button className='bg-blue-800 p-3 rounded-sm text-white'><Link to="/login" className="hover:text-white">Career</Link></button>
 
-
-                            <button className='bg-yellow-400 p-3 rounded-sm'><Link to="/login" className="hover:text-white">Login</Link></button>
-                             <button className='' ><Link to="/signup" className="hover:text-white hover:bg-blue-600 p-3 rounded-sm">Sign Up</Link></button>
+                            {isLongin ? "" : <button className='bg-yellow-400  p-3 rounded-sm'> <Link to='/login'> Login</Link></button>}                           
+                           {isLongin ?   "":<button className='' ><Link to="/signup" className="hover:text-white hover:bg-blue-600 p-3 rounded-sm">Sign Up</Link></button>}
                              <input type="search" placeholder='search' className='rounded-lg'/>
+                             {dayligh ? <button className='text-3xl rounded-full cursor-pointer' onClick={handleDarkmood} ><i className="fa-solid fa-moon"></i></button>: <button className='text-3xl rounded-full cursor-pointer m-3' onClick={handleDarkmood}><i class="fa-solid fa-sun"></i></button>}
+                             {isLongin ? <button className='bg-red-600 text-white  rounded-sm' onClick={()=>{setIsLogin(!isLongin)}}><Link to='/login'>Log out</Link></button> : ''}
 
                         </div>
 

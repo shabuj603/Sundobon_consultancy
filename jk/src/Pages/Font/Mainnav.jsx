@@ -37,6 +37,7 @@ function Mainnav() {
           <Route path='/about' element={<About/>}></Route>
           <Route path='/login' element={<LoginPage/>}></Route>
           <Route path='/signup' element={<SignUpPage/>}></Route>
+          
           <Route path='/service' element={<Service/>}></Route>
           <Route path='/contactus' element={<ContactUs/>}></Route>
 
