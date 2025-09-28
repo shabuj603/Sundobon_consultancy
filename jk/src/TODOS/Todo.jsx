@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
 
 const Todo = (props) => {
- const {title, id, desc }= props.todo;
+ const {title, desc }= props.todo;
+ const {id, onRemove}= props;
 
+
+const handleDelet = (id)=>{
+  onRemove(id);
+}
 
   return (
     <>
@@ -19,7 +24,7 @@ const Todo = (props) => {
           ><p className="text-gray-700">{title}</p>
             <span className="text-gray-700">{desc}</span>
             <button
-             
+             onClick={()=>handleDelet(id)}
               className="px-3 py-1 bg-red-500 text-white text-sm rounded-lg hover:bg-red-600 transition"
             >
               Delete

@@ -1,20 +1,22 @@
 import React, { useState } from 'react'
 
 const NewTodo = (props) => {
+  const {onTodo}= props;
 const[todo, setTodo]= useState({title:"", desc:""});
 const {title, desc}= todo;
+
 const handleInputchange =(event)=>{
- const name = event.target.name
- setTodo((oldtodo)=>{return{...oldtodo, [name]:event.target.value }});
- console.log(title);
-  
-        // setTodo(event.target.value);
+const name= event.target.name;
+setTodo((oldTodo)=>{
+  return{...oldTodo, [name]: event.target.value}
+})        
     }
-    const handleSubmit=(event)=>{
-        event.preventDefault();   
-        console.log(todo, "todo print here");    
-        props.onTodo(todo);     
-    }
+
+  const handleSubmit=(event)=>{
+      event.preventDefault();
+      onTodo(todo);
+      setTodo({title:"", desc:""})
+  }
   return (
     <>
       <div className="max-w-lg mx-auto mt-10 bg-white p-6 rounded-xl shadow-md">
@@ -24,45 +26,17 @@ const handleInputchange =(event)=>{
           <label className="block text-sm font-medium text-gray-600">
             Item Name
           </label>
-          <input
-            type="text"
-            name="name"
-            value={title} 
-            onChange={handleInputchange}            
-            placeholder="Enter item name"
-            className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          />
-        </div>    
+      <input type="text" name='title' id='title' value={title} onChange={handleInputchange} className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+/>
+        </div> 
         <div>
           <label className="block text-sm font-medium text-gray-600">
-            Price ($)
-          </label>
-          <input
-            type="number"
-            name="price"
-            value={todo} 
-            onChange={handleInputchange}   
-            placeholder="Enter price"
-            className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            
-          />
-        </div>       
-        <div>
-          <label className="block text-sm font-medium text-gray-600">
-            Description
+            description
           </label>
           <textarea
-            name="description"
-            value={desc} 
-            onChange={handleInputchange}   
-            placeholder="Write item description"
-            rows="3"
-            className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            name="desc" value={desc} onChange={handleInputchange}     placeholder="Write item description" rows="3"className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></textarea>
-        </div>
-
-     
+        </div>     
         <button
           type="submit"
           className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"

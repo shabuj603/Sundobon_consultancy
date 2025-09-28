@@ -90,7 +90,7 @@ export default function Dashboard() {
           <div className="bg-white p-6 rounded-lg shadow">
             {activeTab === "Dashboard" && <p>Welcome to your dashboard! 🚀</p>}
             {activeTab === "Users" && <p>Here you can manage users. 👥</p>}
-            {activeTab === "Todo App" && <p><TodosApp/>👥</p>}
+            {activeTab === "Todo App" && <div><TodosApp/>👥</div>}
 
             {activeTab === "Settings" && <p>Adjust your settings here. ⚙️</p>}
           </div>
