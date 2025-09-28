@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // install: npm install lucide-react
 import TodosApp from "../../../TODOS/Index";
+import CountryApp from "../../../COUNTRY_APP/Index";
+
+
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("Dashboard");
 
-  const menuItems = ["Dashboard", "Users","Todo App","Settings"];
+  const menuItems = ["Dashboard", "Users","Todo App","CountryApp","Settings"];
 
   return (
     <div className="flex h-screen bg-gray-100">
@@ -89,9 +92,9 @@ export default function Dashboard() {
           </h1>
           <div className="bg-white p-6 rounded-lg shadow">
             {activeTab === "Dashboard" && <p>Welcome to your dashboard! 🚀</p>}
-            {activeTab === "Users" && <p>Here you can manage users. 👥</p>}
+            {activeTab === "Users" && <div><CountryApp/>⚙️</div>}
             {activeTab === "Todo App" && <div><TodosApp/>👥</div>}
-
+            {activeTab === "CountryApp" && <div>calculator⚙️</div>}
             {activeTab === "Settings" && <p>Adjust your settings here. ⚙️</p>}
           </div>
         </main>
