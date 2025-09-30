@@ -23,10 +23,10 @@ import { useTheme } from 'next-themes'
             
             <div className='w-full bg-yellow-600 z-index-50'> 
              
-                <div className='grid grid-cols-3 py-2 text-white'>
-                    <div className='px-5 text-center'>Are you ready to grow up your business? Contact Us</div>
-                    <div className=' px-5 text-center '><i className="fa-solid fa-envelope pr-3 "></i>info.jkconsultancy603@gmail.com</div>
-                    <div className=' px-5 text-center'><i className="fa-solid fa-phone pr-3 text-lg"></i>(+88 ) 0139774753</div>
+                <div className='grid grid-cols-3 py-2 text-white sm:flex text-center max-sm:flex justify-center'>
+                    <div className='px-5 text-center max-sm:hidden'>Are you ready to grow up your business? Contact Us</div>
+                    <div className=' px-5 text-center max-sm:hidden'><i className="fa-solid fa-envelope pr-3 "></i>info.sundorbonconsultancy@gmail.com</div>
+                    <div className=' px-5 text-center max-sm:inline-block'><i className="fa-solid fa-phone pr-3 text-lg"></i>(+88 ) 0139774753</div>
                   
                     </div>    
              </div>
@@ -137,7 +137,7 @@ import { useTheme } from 'next-themes'
                 {/* Mobile Menu */}
                 {isOpen && (
                     <div className="md:hidden px-4 pb-4">
-                        <a href="#" className="block py-2">Home</a>
+                        <Link to="/" className="block py-2">Home</Link>
                         <a href="#" className="block py-2">About</a>
                         <div className="py-2">
                             <span className="block font-semibold">Services</span>

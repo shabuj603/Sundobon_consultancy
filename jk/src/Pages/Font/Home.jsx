@@ -1,12 +1,11 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
 import Carosol from '../Home/Carosol';
-
-
-
 import Card from './Card/Card';
 import CardData from './Card/Card.json';
 import { Link, useNavigate } from 'react-router-dom';
+import CalendarModal from '../../DATETIME/Dtime';
+
 
 function Home() {
 const truncateString =(str, num)=>{
@@ -30,15 +29,15 @@ const truncateString =(str, num)=>{
     </Helmet>
       <div className='bg-[url(./images/backend1.png)] bg-cover bg-center h-screen'>
         {/* <Carosol/> */}
-        <div className='grid grid-cols-2 gap-4 text-center pt-15 pb-2 px-10 ' >
-          <div className='text-left text-xl font-sans select-none'>
-            <div className='text-5xl font-bold'>Transforming how <p className=' text-blue-600'> businesses manage indirect tax</p></div>
-            <p className='text-3xl font-bold my-5'>Rise above the rest</p>
-            <button onClick={()=>{navigate('/service')}}  className='bg-blue-600 text-white font-bold p-3 outline-solid rounded-full mr-4 hover:bg-blue-800 cursor-pointer'>Find Out More <i className="fa-solid fa-right-long text-center"></i></button>           
-            <button className='bg-blue-600 text-white font-bold p-3 outline-solid rounded-full hover:bg-blue-800 cursor-pointer'>Book Meeting </button>
+        <div className='grid grid-cols-1 gap-4 text-center pt-0 pb-2 px-10 max:sm:grid-cols-1' >
+          <div className='text-left text-xl font-sans select-none sm: '>
+            <div className='lg:text-5xl font-bold sm:text-sm grid grid-cols-1 w-full'>Transforming how <p className=' text-blue-600'> businesses manage indirect tax</p></div>
+            <p className='lg:text-3xl font-bold mb-2'>Rise above the rest</p>
+            <button onClick={()=>{navigate('/service')}}  className='bg-blue-600 text-white px-2 py-1 outline-solid rounded-xl float-left mr-4 hover:bg-blue-800 cursor-pointer'>Find Out More <i className="fa-solid fa-right-long text-center sm:float-left"></i></button>           
+           <div><CalendarModal/></div>
           </div>
           <div className='-z-10'>
-            <video className="h-full w-full rounded-lg " controls>
+            <video className="lg:h-full w-full rounded-lg" controls>
               <source
                 src="https://docs.material-tailwind.com/demo.mp4"
                 type="video/mp4"
@@ -47,7 +46,7 @@ const truncateString =(str, num)=>{
             </video></div>
 
         </div>
-        <div className='grid grid-cols-4 gap-4 justify-center'>         
+        <div className='grid grid-cols-2 gap-2 justify-center'>         
           <div className="absulate flex flex-col bg-violet-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
             <div className="">
               <h6 className="mb-2 text-slate-800 text-xl font-semibold">
@@ -84,12 +83,13 @@ const truncateString =(str, num)=>{
       </div>
       <div className='container m-auto'>
         <div className='grid grid-rows-2 align-center'>
-          <div className='text-5xl mt-10 flex justify-center align-center '> what we do</div>
-        <div className='text-5xl font-medium text-fuchsia-950 flex justify-center mb-20'>Fintua&nbsp; <span className='text-blue-600'>
+          <div className='text-5xl mt-10 flex justify-center align-center sm:text-2xl '> <span className='text-blue-600'>
+           What We Do</span></div>
+        <div className='lg:text-5xl font-medium text-fuchsia-950 flex justify-center mb-20 sm:text-sm'>Fintua&nbsp; <span className='text-blue-600'>
            simplifies</span>&nbsp; global
             indirect tax management</div>
         </div>
-        <div className="min-h-screen gap-4 flex flex-wrap flex-1 overflow-hidden items-center justify-center bg-gray-100 p-6  ">
+        <div className="grid grid-cols-2 min-h-screen gap-4  flex-wrap flex-1 overflow-hidden items-center justify-center bg-gray-100 p-6 lg:grid-cols-3 ">
           {items}
         </div>
         <div className='flex items-center justify-center mb-3'>
@@ -99,18 +99,16 @@ const truncateString =(str, num)=>{
       <div className="container mx-auto px-4 mt-10">
         <div className="grid grid-cols-2 gap-4 my-30">
           <div>
-            <p className='text-blue-600 text-3xl'>World-class VAT Experts</p>
+            <p className='text-blue-600 text-sm'>World-class VAT Experts</p>
 
-            <p className='text-fuchsia-950 text-6xl font-semibold mt-3'>Expertise that drives innovation</p>
+            <p className='text-fuchsia-950 text-md font-semibold mt-3'>Expertise that drives innovation</p>
           </div>
 
-          <div><p className='font-serif text-2xl mb-4 leading-10'>At Fintua, innovation starts with people.
+          <div><p className='font-serif text-sm mb-4 '>At Fintua, innovation starts with people.
 
-            Our world-class team has decades of experience in indirect tax and fintech – delivering intelligent automation and transformative technology that redefine how businesses manage tax.
-
-            We’re not just solving today’s challenges, we’re shaping the future of indirect tax compliance.</p>
+            Our world-class team has decades of experience in indirect tax and fintech – delivering intelligent automation and transformative technology that redefine how businesses manage tax..</p>
              <div className='flex'>
-          <a href="http://"> <button className=' flex  bg-blue-600 text-white font-bold p-3 outline-solid rounded-md hover:bg-orange-400 '>Talk To Expert </button></a>
+          <a href="http://"> <button className=' flex  bg-blue-600 text-white py-1 px-2 outline-solid rounded-md hover:bg-orange-400 '>Talk To Expert </button></a>
         </div>
         <img src=" " alt="" srcSet="" />
 

@@ -18,11 +18,6 @@ import ContactUs from './ContactUs';
 
 
 
-
-
-
-
-
 function Mainnav() {
   const [isLoggedin, setIsloggedin] = useState(true)
   return (

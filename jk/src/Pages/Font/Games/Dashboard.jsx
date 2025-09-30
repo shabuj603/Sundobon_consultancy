@@ -3,13 +3,14 @@ import { Menu, X } from "lucide-react"; // install: npm install lucide-react
 import TodosApp from "../../../TODOS/Index";
 import CountryApp from "../../../COUNTRY_APP/Index";
 import Calculator from "../../../CALCULATOR/Calculator";
+import CalendarModal from "../../../DATETIME/Dtime";
 
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("Dashboard");
 
-  const menuItems = ["Dashboard", "Users","Todo App","CountryApp","Calculator","Settings"];
+  const menuItems = ["Dashboard","CalendarModal", "Users","Todo App","CountryApp","Calculator","Settings"];
 
   return (
     <div className="flex h-screen bg-gray-100">
@@ -97,6 +98,7 @@ export default function Dashboard() {
             {activeTab === "Calculator" && <div><Calculator/></div>}
             {activeTab === "CountryApp" && <div>calculator⚙️</div>}
             {activeTab === "Settings" && <p>Adjust your settings here. ⚙️</p>}
+            {activeTab === "CalendarModal" && <p><CalendarModal/> ⚙️</p>}
           </div>
         </main>
       </div>
