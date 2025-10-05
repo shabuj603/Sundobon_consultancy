@@ -18,6 +18,11 @@ const truncateString =(str, num)=>{
   let items = [];
   items = CardData.map((item, index) => <Card key={index} image={item.image} title={item.title} description={truncateString(item.description, 100)} buttonText={item.button}
   />)
+  for (let i = 0; i < 4 ; i++) {
+    <Card/>
+  
+}
+  
 
   const navigate = useNavigate();
 
@@ -27,9 +32,9 @@ const truncateString =(str, num)=>{
     <Helmet>
       <title>Home page</title>
     </Helmet>
-      <div className='bg-[url(./images/backend1.png)] bg-cover bg-center h-screen'>
+      <div className='bg-[url(./images/backend1.png)] bg-cover bg-center h-auto'>
         {/* <Carosol/> */}
-        <div className='grid grid-cols-1 gap-4 text-center pt-0 pb-2 px-10 max:sm:grid-cols-1' >
+        <div className='grid grid-cols-1 gap-4 text-center pt-0 pb-2 px-10 md:grid-cols-2' >
           <div className='text-left text-xl font-sans select-none sm: '>
             <div className='lg:text-5xl font-bold sm:text-sm grid grid-cols-1 w-full'>Transforming how <p className=' text-blue-600'> businesses manage indirect tax</p></div>
             <p className='lg:text-3xl font-bold mb-2'>Rise above the rest</p>
@@ -37,7 +42,7 @@ const truncateString =(str, num)=>{
            <div><CalendarModal/></div>
           </div>
           <div className='-z-10'>
-            <video className="lg:h-full w-full rounded-lg" controls>
+            <video className="h-full w-full rounded-lg" controls>
               <source
                 src="https://docs.material-tailwind.com/demo.mp4"
                 type="video/mp4"
@@ -46,7 +51,7 @@ const truncateString =(str, num)=>{
             </video></div>
 
         </div>
-        <div className='grid grid-cols-2 gap-2 justify-center'>         
+        <div className='grid grid-cols-2 gap-2 justify-center lg:grid-cols-4'>         
           <div className="absulate flex flex-col bg-violet-200 outline-4 outline-white shadow-xl/25 border border-slate-200 rounded-lg m-4 p-2">
             <div className="">
               <h6 className="mb-2 text-slate-800 text-xl font-semibold">
@@ -83,13 +88,13 @@ const truncateString =(str, num)=>{
       </div>
       <div className='container m-auto'>
         <div className='grid grid-rows-2 align-center'>
-          <div className='text-5xl mt-10 flex justify-center align-center sm:text-2xl '> <span className='text-blue-600'>
+          <div className='text-2xl mt-10 flex justify-center align-center lg:text-5xl line-clamp-4 '> <span className='text-blue-600'>
            What We Do</span></div>
-        <div className='lg:text-5xl font-medium text-fuchsia-950 flex justify-center mb-20 sm:text-sm'>Fintua&nbsp; <span className='text-blue-600'>
+        <div className='text-2x5 font-medium text-fuchsia-950 flex justify-center text-sm lg:text-4xl'>Fintua&nbsp; <span className='text-blue-600'>
            simplifies</span>&nbsp; global
             indirect tax management</div>
         </div>
-        <div className="grid grid-cols-2 min-h-screen gap-4  flex-wrap flex-1 overflow-hidden items-center justify-center bg-gray-100 p-6 lg:grid-cols-3 ">
+        <div className="grid grid-cols-2 min-h-screen gap-4 flex-wrap flex-1 overflow-hidden items-center justify-center px-6 lg:grid-cols-3 ">
           {items}
         </div>
         <div className='flex items-center justify-center mb-3'>
@@ -114,7 +119,6 @@ const truncateString =(str, num)=>{
 
           </div>
         </div>
-
       </div>
     </div>
   )
